@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "381756600565",
+    "firebase_url": "https://chat-test-c9662.firebaseio.com",
+    "project_id": "chat-test-c9662",
+    "storage_bucket": "chat-test-c9662.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381756600565:android:5643dfbe97c8ec87f815bc",
+        "android_client_info": {
+          "package_name": "ziemansoft.ziemapp.chattestapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381756600565-cmtvj5ng4l70cg0en3kdc6c7mpp4dkeu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ziemansoft.ziemapp.chattestapp",
+            "certificate_hash": "1f2013eb9d7a46d351771ddcfaa9335d828abd8a"
+          }
+        },
+        {
+          "client_id": "381756600565-r7ev114nrhtqmou43i1ejq8hpiob1fqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ-oGOUYMl6WVwUoLk45Gz2O6_7rbL3sc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381756600565-r7ev114nrhtqmou43i1ejq8hpiob1fqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
