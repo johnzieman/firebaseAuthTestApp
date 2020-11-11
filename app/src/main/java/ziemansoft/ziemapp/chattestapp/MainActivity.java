@@ -1,5 +1,10 @@
 package ziemansoft.ziemapp.chattestapp;
 
+//hello android
+
+//Created by Jahongir Zokirov
+
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +29,8 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Inject;
+
 import ziemansoft.ziemapp.chattestapp.adapters.ChatAdapter;
 import ziemansoft.ziemapp.chattestapp.auth.RegisterActivity;
 import ziemansoft.ziemapp.chattestapp.pojo.Message;
@@ -34,24 +41,27 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
     private RecyclerView recyclerView;
-    private ChatAdapter adapter;
+
+    @Inject
+    ChatAdapter adapter;
+
     private EditText messageField;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ((App)getApplication()).getComponent().inject(this);
 
         //check for user authorize
-        mAuth = FirebaseAuth.getInstance();
-        if (mAuth.getCurrentUser() == null) {
-            Intent intent = new Intent(this, RegisterActivity.class);
-            startActivity(intent);
-        }
+//        mAuth = FirebaseAuth.getInstance();
+//        if (mAuth.getCurrentUser() == null) {
+//            Intent intent = new Intent(this, RegisterActivity.class);
+//            startActivity(intent);
+//        }
         db = FirebaseFirestore.getInstance();
 
         //init
-        adapter = new ChatAdapter();
         recyclerView = findViewById(R.id.recyclerView);
         messageField = findViewById(R.id.editTextTextMultiLine);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
